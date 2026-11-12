@@ -1,0 +1,711 @@
+/* Alice PARK | Stage 1 visual foundation. Original Bootstrap/JS files untouched. */
+:root {
+   --accent-color:#e87567;
+   --heading-color:#233047;
+   --default-color:#3c4555;
+   --background-color:#fffdf9;
+   --surface-color:#fffdf9;
+}
+
+
+html {
+  scroll-behavior:smooth
+}
+
+
+body {
+  background:#fffdf9;
+  color:#3c4555
+}
+
+
+.header {
+  background:#fffdf9!important;
+  box-shadow:0 1px 0 rgba(35,48,71,.08)
+}
+
+
+.header .sitename {
+  font-family:Arial,sans-serif!important;
+  font-size:24px!important;
+  font-weight:800;
+  letter-spacing:-.8px;
+  color:#233047
+}
+
+/* ===================================
+   Header - Alice PARK Logo Font
+=================================== */
+
+.header .logo .sitename {
+    font-family: 'Outfit', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+
+.navmenu a {
+  font-size:14px!important;
+  font-weight:600
+}
+
+
+.navmenu a:hover,.navmenu .active {
+  color:#e87567!important
+}
+
+
+.alice-hero {
+  min-height:690px!important;
+  display:flex;
+  align-items:center;
+  background:#fffdf9!important;
+  color:#233047!important;
+  position:relative;
+  overflow:hidden;
+  padding:105px 0 90px!important
+}
+
+
+.alice-hero::before {
+  display:none!important
+}
+
+
+.alice-hero-inner {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:7%;
+  position:relative;
+  z-index:2
+}
+
+
+.alice-hero-copy .eyebrow {
+  font-size:12px;
+  letter-spacing:3px;
+  font-weight:700;
+  color:#d36d61
+}
+
+
+.alice-hero-copy h2 {
+  font-family:Arial,sans-serif!important;
+  font-size:clamp(66px,7vw,112px)!important;
+  font-weight:900!important;
+  letter-spacing:-6px;
+  line-height:.99!important;
+  color:#233047!important;
+  margin:22px 0 28px;
+  text-align:left
+}
+
+
+.alice-hero-copy h2 em {
+  font-style:normal;
+  color:#e87567
+}
+
+
+.alice-hero-copy p {
+  font-size:17px!important;
+  line-height:1.9;
+  color:#667080!important;
+  margin-bottom:32px
+}
+
+
+.alice-button {
+  display:inline-flex;
+  gap:30px;
+  align-items:center;
+  background:#233047;
+  color:white!important;
+  padding:15px 23px;
+  border-radius:3px;
+  font-size:14px;
+  font-weight:700;
+  transition:background .2s
+}
+
+
+.alice-button:hover {
+  background:#e87567
+}
+
+
+.alice-hero-art {
+  height:490px;
+  position:relative
+}
+
+
+.collage-note {
+  position:absolute;
+  top:18px;
+  left:12%;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:2px;
+  color:#84909a
+}
+
+
+.collage-note small {
+  display:block;
+  margin-top:8px;
+  font-size:11px;
+  letter-spacing:0;
+  font-weight:400
+}
+
+
+.collage-tile {
+  position:absolute;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  font-size:clamp(22px,3vw,44px);
+  font-weight:900;
+  letter-spacing:-2px;
+  box-shadow:0 14px 30px rgba(33,47,67,.09);
+  border:10px solid #fff
+}
+
+
+.collage-tile span {
+  font-size:10px;
+  letter-spacing:2px;
+  font-weight:600;
+  margin-top:9px
+}
+
+
+.tile-one {
+  top:68px;
+  left:3%;
+  width:57%;
+  height:240px;
+  background:#f5d9d2;
+  color:#b7504c;
+  transform:rotate(-8deg)
+}
+
+
+.tile-two {
+  top:40px;
+  right:0;
+  width:45%;
+  height:235px;
+  background:#dcebf9;
+  color:#4c7cb5;
+  transform:rotate(8deg)
+}
+
+
+.tile-three {
+  bottom:22px;
+  left:25%;
+  width:62%;
+  height:215px;
+  background:#e3f1e8;
+  color:#468d79;
+  transform:rotate(-3deg)
+}
+
+
+.puzzle-fragment {
+  position:absolute;
+  width:62px;
+  height:62px;
+  background:#f2c956;
+  border-radius:9px;
+  transform:rotate(17deg);
+  z-index:1
+}
+
+
+.puzzle-fragment::after {
+  content:'';
+  position:absolute;
+  top:-18px;
+  left:20px;
+  width:24px;
+  height:26px;
+  border-radius:50%;
+  background:inherit
+}
+
+
+.fragment-one {
+  right:8%;
+  top:0;
+  background:#f1c858
+}
+
+
+.fragment-two {
+  left:1%;
+  bottom:5%;
+  background:#e87567
+}
+
+
+.edge-fragment {
+  width:74px;
+  height:74px;
+  z-index:0
+}
+
+
+.edge-left {
+  left:-44px;
+  top:23%;
+  background:#6ebfae
+}
+
+
+.edge-right {
+  right:-42px;
+  bottom:18%;
+  background:#78a7e5
+}
+
+
+.section-title h2 {
+  color:#233047
+}
+
+
+.portfolio {
+  background:#fff!important
+}
+
+
+.portfolio .portfolio-item img {
+  display:block;
+  width:100%;
+  aspect-ratio:4/3;
+  object-fit:cover;
+  border-radius:3px
+}
+
+
+.portfolio .portfolio-item {
+  overflow:hidden
+}
+
+
+.portfolio .portfolio-info {
+  border-radius:0 0 3px 3px
+}
+
+
+.portfolio .portfolio-filters li {
+  font-size:13px!important
+}
+
+
+.alice-contact {
+  background:#f6f3ee
+}
+
+
+.alice-contact-content {
+  text-align:center;
+  padding:15px 0 55px
+}
+
+
+.alice-contact-content h3 {
+  font-size:clamp(24px,4vw,42px);
+  font-weight:800;
+  color:#233047
+}
+
+
+.alice-contact-content p {
+  color:#7b8390
+}
+
+
+.alice-contact-content a {
+  display:inline-block;
+  margin-top:14px;
+  color:#d36d61;
+  font-weight:700
+}
+
+
+.footer {
+  background:#233047!important;
+  color:#e7eaf0!important
+}
+
+
+.footer .sitename,.footer .copyright,.footer .credits,.footer p {
+  color:#e7eaf0!important
+}
+
+
+.footer a {
+  color:#f0c85a!important
+}
+
+
+@media(max-width:991px){
+  .alice-hero-inner {
+  grid-template-columns:1fr;
+  gap:35px
+}
+
+
+.alice-hero {
+  padding:85px 0 60px!important
+}
+
+
+.alice-hero-copy h2 {
+  font-size:clamp(65px,12vw,100px)!important
+}
+
+
+.alice-hero-art {
+  height:420px;
+  max-width:600px;
+  width:100%;
+  margin:auto
+}
+}
+
+
+@media(max-width:575px){
+  .alice-hero-copy h2 {
+  font-size:clamp(56px,15vw,80px)!important;
+  letter-spacing:-4px
+}
+
+
+.alice-hero-copy p {
+  font-size:14px!important
+}
+
+
+.alice-hero-art {
+  height:320px
+}
+
+
+.tile-one {
+  height:170px
+}
+
+
+.tile-two {
+  height:165px
+}
+
+
+.tile-three {
+  height:155px
+}
+
+
+.collage-tile {
+  border-width:6px
+}
+
+
+.header .sitename {
+  font-size:20px!important
+}
+}
+
+/* ===== 2차 메인 비주얼: 이미지 및 브랜드 색상 ===== */
+/* 포토샵 이미지 배경색과 동일한 색상 */
+:root {
+  --accent-color: #EF786B;
+  --heading-color: #242B3A;
+  --background-color: #F9F8F3;
+  --surface-color: #F9F8F3;
+}
+
+.alice-hero {
+  background: #F9F8F3 !important;
+  min-height: 0 !important;
+  padding: 22px 0 32px !important;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 좌측 45%, 우측 55%: 기존 레이아웃 유지 */
+.alice-hero-inner.alice-hero-images {
+  display: grid !important;
+  grid-template-columns: 45% 55% !important;
+  gap: 0 !important;
+  align-items: start !important;
+  max-width: 1320px;
+  position: relative;
+  z-index: 2;
+}
+
+.alice-image-panel {
+  position: relative;
+  min-width: 0;
+}
+
+/* 기존 Bootstrap 템플릿의 .hero img 절대 위치 규칙 방지 */
+.alice-hero .alice-image-panel > img.alice-hero-img {
+  position: static !important;
+  inset: auto !important;
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  object-fit: contain !important;
+  z-index: auto !important;
+}
+
+/* 이미지 속 텍스트 아래에 실제 클릭 가능한 버튼 배치 */
+.alice-image-button {
+  position: absolute;
+  top: 70.2%;
+  left: 7.5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: #242B3A;
+  color: #FFFFFF !important;
+  font-size: clamp(10px, 1.05vw, 14px);
+  font-weight: 700;
+  border-radius: 3px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s;
+}
+
+.alice-image-button:hover {
+  background: #EF786B;
+  color: #FFFFFF !important;
+}
+
+/* ===== 양쪽 퍼즐: 원본 PNG 유지, CSS로 회전 및 가장자리 잘림 ===== */
+.alice-hero > img.alice-edge-puzzle {
+  position: absolute !important;
+  inset: auto !important;
+  display: block !important;
+  width: clamp(100px, 11vw, 180px) !important;
+  height: auto !important;
+  object-fit: contain !important;
+  z-index: 4 !important;
+  pointer-events: none;
+}
+
+/* 민트 퍼즐: 왼쪽 화면 밖으로 약 65% 이동 + 반시계 17도 */
+.alice-hero > img.alice-edge-left {
+  left: 0 !important;
+  top: 28% !important;
+  right: auto !important;
+  bottom: auto !important;
+  transform: translateX(-40%) rotate(-152deg) !important;
+}
+
+/* 블루 퍼즐: 오른쪽 화면 밖으로 약 65% 이동 + 시계 19도 */
+.alice-hero > img.alice-edge-right {
+  right: 0 !important;
+  top: 49% !important;
+  left: auto !important;
+  bottom: auto !important;
+  transform: translateX(55%) rotate(143deg) !important;
+}
+
+/* ===== 태블릿 ===== */
+@media (max-width: 991px) {
+  .alice-hero {
+    padding: 12px 0 25px !important;
+  }
+
+  .alice-hero-inner.alice-hero-images {
+    grid-template-columns: 45% 55% !important;
+    gap: 0 !important;
+  }
+
+  .alice-image-button {
+    padding: 9px 12px;
+    font-size: 10px;
+  }
+
+  .alice-hero > img.alice-edge-puzzle {
+    width: 90px !important;
+  }
+}
+
+/* ===== 모바일: 메인 이미지 상하 배치 ===== */
+@media (max-width: 767px) {
+  .alice-hero-inner.alice-hero-images {
+    grid-template-columns: 1fr !important;
+    max-width: 550px;
+  }
+
+  .alice-image-button {
+    top: 70%;
+    padding: 11px 18px;
+    font-size: clamp(11px, 3vw, 15px);
+  }
+
+  .alice-hero > img.alice-edge-puzzle {
+    width: clamp(70px, 19vw, 110px) !important;
+  }
+
+  .alice-hero > img.alice-edge-left {
+    top: 14% !important;
+    transform: translateX(-40%) rotate(-152deg) !important;
+  }
+
+  .alice-hero > img.alice-edge-right {
+    top: 75% !important;
+    transform: translateX(55%) rotate(-143deg) !important;
+  }
+}
+
+
+/* ===== 3차 수정: 메인 버튼 정렬 ===== */
+/* 이미지에 포함된 문구 아래쪽에 배치하고, 텍스트 시작선에 맞춤 */
+.alice-image-button {
+  top: 82% !important;
+  left: 12% !important;
+  z-index: 5;
+}
+
+/* ===== About: 프로필 사진 크기 및 여백 ===== */
+.alice-about-photo-column {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.alice-about-photo {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ===== Skills: 브랜드 컬러 그래프 ===== */
+/* 기존 진행 효과는 유지하고 그래프 색상만 변경 */
+#skills .progress-bar {
+  background-color: #6A9DE0 !important;
+}
+
+#skills .col-lg-6:nth-child(2) .progress-bar {
+  background-color: #EF786B !important;
+}
+
+/* ===== 섹션 배경색: 아이보리와 화이트 교차 ===== */
+#portfolio,
+#skills,
+#contact {
+  background-color: #FFFFFF !important;
+}
+
+#about,
+#resume {
+  background-color: #FAF8F3 !important;
+}
+
+/* ===== Contact: 이메일만 표시 ===== */
+.alice-contact-content {
+  text-align: center;
+  padding: 4px 0 42px;
+}
+
+.alice-contact-content h3 {
+  color: #242B3A;
+}
+
+.alice-contact-content .alice-email-link {
+  display: inline-block;
+  color: #EF786B;
+  font-size: clamp(17px, 2vw, 23px);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 4px;
+}
+
+.alice-contact-content .alice-email-link:hover {
+  color: #242B3A;
+}
+
+/* ===== 태블릿 및 모바일 ===== */
+@media (max-width: 991px) {
+  .alice-about-photo {
+    max-width: 280px;
+  }
+
+  .alice-image-button {
+    top: 82% !important;
+    left: 12% !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .alice-about-photo-column {
+    margin-bottom: 20px;
+  }
+
+  .alice-image-button {
+    top: 82% !important;
+    left: 12% !important;
+    font-size: 12px;
+  }
+}
+
+/* ===== 5차 수정: 메인 이미지 안의 실제 글자 시작선에 버튼 정렬 ===== */
+/* 왼쪽 JPG의 글자 시작 위치는 이미지 너비의 약 22% 지점입니다. */
+.alice-hero .alice-image-left > .alice-image-button {
+  left: 22% !important;
+  top: 82% !important;
+}
+
+/* ===== 5차 수정: About 사진을 소개글보다 짧고 단정하게 ===== */
+#about .alice-about-photo-column {
+  align-items: flex-start;
+}
+
+#about .alice-about-photo {
+  width: 100%;
+  max-width: 230px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  #about .alice-about-photo {
+    max-width: 210px;
+  }
+}
+
+@media (max-width: 767px) {
+  #about .alice-about-photo {
+    max-width: 220px;
+  }
+}
+
+
+/* 포트폴리오: 미리보기(돋보기)와 상세 페이지(연결사슬) 아이콘 모두 표시 */
+.portfolio .portfolio-item .portfolio-info .preview-link,
+.portfolio .portfolio-item .portfolio-info .details-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

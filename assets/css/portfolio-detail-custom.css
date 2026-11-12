@@ -1,0 +1,54 @@
+/* ============================================================
+   Portfolio Details 전용 스타일
+   헤더/푸터 공통 스타일: alice-custom.css
+   슬라이드/상세 이미지 레이아웃: 이 파일에서 수정
+   ============================================================ */
+
+/* 상단 제목 영역 */
+.alice-detail-heading { background: #FAF8F3; padding: 65px 0 54px; }
+.alice-detail-heading-inner { display: flex; align-items: end; justify-content: space-between; gap: 24px; }
+.alice-detail-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .18em; color: #EF786B; margin-bottom: 12px; }
+.alice-detail-heading h1 { font-size: clamp(30px, 4vw, 48px); font-weight: 800; color: #242B3A; margin: 0 0 12px; }
+.alice-detail-subtitle { color: #6B7280; margin: 0; }
+.alice-detail-back { color: #242B3A; text-decoration: none; font-weight: 600; white-space: nowrap; }
+.alice-detail-back:hover { color: #EF786B; }
+
+/* 상세 페이지 공통 여백 */
+.alice-detail-content { background: #fff; padding-top: 65px; padding-bottom: 85px; }
+.alice-detail-section-heading { margin-bottom: 26px; }
+.alice-detail-section-heading h2, .alice-detail-intro h2 { color: #242B3A; font-size: 25px; font-weight: 700; margin-bottom: 9px; }
+.alice-detail-section-heading p, .alice-detail-intro p { color: #6B7280; margin: 0; line-height: 1.8; }
+
+/* 상단 주요 컷 슬라이드 */
+.alice-detail-slider { position: relative; width: 100%; padding-bottom: 46px; }
+.alice-detail-slider .swiper-slide { display: flex; justify-content: center; align-items: center; background: #FAF8F3; border-radius: 12px; overflow: hidden; }
+.alice-detail-slider .swiper-slide img { display: block; width: 100%; height: auto; max-height: 630px; object-fit: contain; }
+.alice-detail-slider .swiper-pagination { bottom: 7px; }
+.alice-detail-slider .swiper-pagination-bullet { background: #6A9DE0; opacity: .35; }
+.alice-detail-slider .swiper-pagination-bullet-active { background: #EF786B; opacity: 1; }
+.alice-detail-arrow { position: absolute; top: calc(50% - 23px); z-index: 5; display: grid; place-items: center; width: 44px; height: 44px; border: 0; border-radius: 50%; background: rgba(36,43,58,.78); color: white; font-size: 19px; }
+.alice-detail-prev { left: 16px; }
+.alice-detail-next { right: 16px; }
+.alice-detail-arrow:hover { background: #EF786B; }
+
+/* 프로젝트 개요 */
+.alice-detail-intro { padding: 44px 0 54px; border-bottom: 1px solid #ECECEC; }
+.alice-detail-long-heading { margin-top: 52px; }
+
+/* 긴 상세 이미지: 고정 높이 없이 이미지 비율 그대로 출력 */
+.alice-detail-long-image { width: 100%; max-width: 1000px; margin: 0 auto; }
+.alice-detail-long-image img { display: block; width: 100%; height: auto; }
+.alice-detail-bottom-nav { text-align: center; margin-top: 60px; }
+.alice-detail-bottom-nav a { display: inline-block; padding: 13px 22px; background: #242B3A; border-radius: 5px; color: #fff; text-decoration: none; }
+.alice-detail-bottom-nav a:hover { background: #EF786B; }
+
+@media (max-width: 767px) {
+  .alice-detail-heading { padding: 42px 0; }
+  .alice-detail-heading-inner { align-items: flex-start; flex-direction: column; }
+  .alice-detail-content { padding-top: 42px; }
+  .alice-detail-arrow { width: 34px; height: 34px; font-size: 15px; }
+  .alice-detail-prev { left: 8px; }
+  .alice-detail-next { right: 8px; }
+  .alice-detail-intro { padding: 32px 0; }
+  .alice-detail-long-heading { margin-top: 36px; }
+}
